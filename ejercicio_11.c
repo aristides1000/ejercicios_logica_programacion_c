@@ -3,10 +3,11 @@
 */
 
 #include <stdio.h>
+#include <limits.h>
 
 int main()
 {
-    int i, numero, mayor;
+    int i, numero, mayor = INT_MIN;
     int arreglo[100];
 
     printf("Digite el numero de elementos del arreglo: "); scanf("%i", &numero);

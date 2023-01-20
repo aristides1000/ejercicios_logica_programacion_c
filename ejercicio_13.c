@@ -1,13 +1,9 @@
-/*
-12. Hacer una función que determine el elemento menor en un arreglo numérico que no estaba previamente ordenado.
-*/
-
 #include <stdio.h>
 #include <limits.h>
 
 int main()
 {
-    int i, numero, menor = INT_MAX;
+    int i, numero, menor = INT_MAX, mayor = INT_MIN, rango;
     int arreglo[100];
 
     printf("Digite el numero de elementos del arreglo: "); scanf("%i", &numero);
@@ -26,6 +22,25 @@ int main()
     }
 
     printf("El numero menor es: %i\n", menor);
+
+    for(i = 0; i < numero; i++)
+    {
+        if(arreglo[i] > mayor)
+        {
+            mayor = arreglo[i];
+        }
+    }
+
+    printf("El numero mayor es: %i\n", mayor);
+
+    rango = menor - mayor;
+
+    if (rango < 0)
+    {
+      rango = rango * -1;
+    }
+
+    printf("El rango es: %i\n", rango);
 
     printf("Preciona una tecla para continuar");
     getch();
