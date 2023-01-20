@@ -1,6 +1,5 @@
 /*
   1. Hacer una función que diga si un número es primo.
-int primo(int n);
 */
 
 #include <stdio.h>
@@ -26,7 +25,7 @@ int main()
       printf("El numero %i es primo\n", numero);
   }
 
-  printf("Press Any Key to Continue\n");
+  printf("Preciona una tecla para continuar");
   getch();
 
   return 0;
